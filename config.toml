@@ -1,4 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'de-de'
+defaultContentLanguage = 'de'
 title = 'Analysis'
 theme = 'anachi'
+enableGitInfo = true

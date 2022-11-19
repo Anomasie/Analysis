@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section>
+    <div class="flex flex-col items-center">
+        <h1 class="text-md italic">~ {{ .Title }} ~</h1>
+        <div class="w-7/12 border-b border-gray-300 my-1"></div>
+    </div>
+    <article class="prose max-w-3xl dark:prose-invert py-3">
+       {{ .Content }}
+    </article>
+    <ul class="flex flex-col gap-2">
+        {{ range .Pages }}
+        <li class="flex flex-col">
+            <a class="hover:underline text-lg" href="{{ .Permalink }}">{{ .Title }}</a>
+            <time class="text-sm text-slate-400">{{ time.Format "Mon, 02 Jan 2006 15:04" .Lastmod }}</time>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

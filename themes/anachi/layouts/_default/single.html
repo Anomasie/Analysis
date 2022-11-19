@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="flex flex-col min-h-full justify-between grow">
+    <main class="flex flex-col">
+        <div class="flex flex-col items-center">
+            <h1 class="text-md italic">~ {{ .Title }} ~</h1>
+            <div class="w-7/12 border-b border-gray-300 my-1"></div>
+        </div>
+        <article class="prose max-w-full dark:prose-invert py-3">
+           {{ .Content }}
+        </article>
+    </main>
+    <aside class="">
+        <div class="flex flex-col items-center py-6">
+            <div class="w-7/12 border-b border-gray-300 my-1"></div>
+        </div>
+        <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {{ range .Site.RegularPages }}
+            <li class="flex flex-col w-fit justify-self-center">
+                <a class="hover:underline text-lg" href="{{ .Permalink }}">{{ .Title }}</a>
+                <time class="text-sm text-slate-400">{{ time.Format "Mon, 02 Jan 2006 15:04" .Lastmod }}</time>
+            </li>
+            {{ end }}
+        </ul>
+    </aside>
+</div>
+{{ end }}
