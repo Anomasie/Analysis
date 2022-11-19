@@ -4,3 +4,4 @@ defaultContentLanguage = 'de'
 title = 'Analysis'
 theme = 'anachi'
 enableGitInfo = true
+
