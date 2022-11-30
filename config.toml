@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://anomasie.github.io/analysis'
 languageCode = 'de-de'
 defaultContentLanguage = 'de'
 title = 'Analysis'
