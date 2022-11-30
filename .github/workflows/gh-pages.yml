@@ -21,7 +21,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
             
-      - name Setup Node
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 'latest'
