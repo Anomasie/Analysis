@@ -3,15 +3,15 @@
     <main class="flex flex-col">
         <div class="flex flex-col items-center">
             <h1 class="text-md italic">~ {{ .Title }} ~</h1>
-            <div class="w-7/12 border-b border-gray-300 my-1"></div>
+            <div class="w-7/12 border-b border-slate-400 my-1"></div>
         </div>
-        <article class="prose max-w-full dark:prose-invert py-3">
+        <article class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3">
            {{ .Content }}
         </article>
     </main>
-    <aside class="">
+    <aside class="mt-6">
         <div class="flex flex-col items-center py-6">
-            <div class="w-7/12 border-b border-gray-300 my-1"></div>
+            <div class="w-7/12 border-b border-slate-400 my-1"></div>
         </div>
         <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {{ range .Site.RegularPages }}

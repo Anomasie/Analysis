@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.details-container[open] summary {
+    filter: blur(0);
+    cursor: initial;
+}
+
+.details-container summary {
+    filter: blur(5px);
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* fixes inconsistency with Chrome */
+.details-container summary > :last-child {
+    margin-bottom: 0px;
+}
