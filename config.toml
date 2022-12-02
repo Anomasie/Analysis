@@ -1,4 +1,4 @@
-baseURL = 'https://anomasie.github.io/analysis'
+baseURL = 'https://anomasie.github.io/Analysis'
 languageCode = 'de-de'
 defaultContentLanguage = 'de'
 title = 'Analysis'
