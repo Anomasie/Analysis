@@ -38,7 +38,7 @@ Auf diesem Blatt müsst ihr ein paar Ungleichungen beweisen, die mit den binomis
 {{</ details >}}
 
 {{< details >}}
-- Um $x^2 \geq 0$ zu zeigen, brauchst du (O3).
+- Um $x^2 \geq 0$ für $x > 0$ zu zeigen, brauchst du (O3).
 {{</ details >}}
 
 ## Aufgabe 2
