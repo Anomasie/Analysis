@@ -48,10 +48,6 @@ Das gilt für alle Aufgaben.
 - Fallunterscheidung.
 {{</ details >}}
 
-{{< details >}}
-- Du musst eine Äquivalenz zeigen. Das heißt, du brauchst sowohl die Hin- als auch die Rückrichtung. Das lässt sich beides gleichzeitig machen.
-{{</ details >}}
-
 ### (b)
 
 {{< details >}}
@@ -59,7 +55,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Wenn du beide Ungleichungen getrennt ansiehst, kannst du das $x_0$ auf die andere Seite ziehen.
+- Sieh dir beide Ungleichungen getrennt an.
 {{</ details >}}
 
 ## Aufgabe 4
@@ -81,15 +77,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Nimm also an, dass ein $i \in I$ eine obere Schranke von $I$ wäre. Jetzt musst du ein Element $m \in I$ finden, das größer ist als $i$.
-{{</ details >}}
-
-{{< details >}}
 - Unter Umständen könnte dir Aufgabe 3 auf Präsenzblatt 8 helfen.
-{{</ details >}}
-
-{{< details >}}
-- Z.B. für $t = \frac{1}{2}$.
 {{</ details >}}
 
 ### (c)
@@ -100,12 +88,4 @@ Das gilt für alle Aufgaben.
 
 {{< details >}}
 - Sieh dir das Bild aus (a) an. Was ist die kleinste "Zahl", die größer als alle "Zahlen" in $I$ ist?
-{{</ details >}}
-
-{{< details >}}
-- Um zu zeigen, dass dein gefundenes $s$ tatsächlich diese Eigenschaft erfüllt, kannst du einen Widerspruchsbeweis führen. Nimm also an, es gäbe ein $x < s$, das auch eine obere Schranke ist.
-{{</ details >}}
-
-{{< details >}}
-- Wenn dein $s$ richtig ist, folgt das direkt aus (b).
 {{</ details >}}
