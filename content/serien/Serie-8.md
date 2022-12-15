@@ -15,7 +15,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Du darfst verwenden, dass $x \cdot y = 0$ genau dann gilt, wenn $x = 0$ oder $y = 0$.
+- Du darfst verwenden, dass $x \cdot y \geq 0$ genau dann gilt, wenn $x \geq 0$ und $y \geq 0$ gilt oder $x \leq 0$ und $y \leq 0$.
 {{</ details >}}
 
 ## Aufgabe 2
@@ -37,7 +37,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Überlege dir, warum $-|x| \leq x \leq |x|$ gelten muss.
+- Überlege dir, warum $-|x| \leq x \leq |x|$ immer gelten muss.
 {{</ details >}}
 
 ## Aufgabe 3
@@ -46,6 +46,10 @@ Das gilt für alle Aufgaben.
 
 {{< details >}}
 - Fallunterscheidung.
+{{</ details >}}
+
+{{< details >}}
+- Du musst eine Äquivalenz zeigen. Das heißt, du brauchst sowohl die Hin- als auch die Rückrichtung. Das lässt sich beides gleichzeitig machen.
 {{</ details >}}
 
 ### (b)
@@ -63,11 +67,11 @@ Das gilt für alle Aufgaben.
 ### (a)
 
 {{< details >}}
-- Zeichne dir ein Bild. Überlege dir anhand des Bildes, welche Elemente als obere Schranke in Frage kommen können.
+- Zeichne dir ein Bild. Überlege dir anhand des Bildes, welche Elemente als obere Schranken in Frage kommen können.
 {{</ details >}}
 
 {{< details >}}
-- Obere Schranken sind nicht eindeutig, es gibt mehrere Lösungen. Du musst (nur) eine finden.
+- Obere Schranken sind nicht eindeutig, es gibt mehrere Lösungen. Du musst nur eine finden.
 {{</ details >}}
 
 ### (b)
@@ -77,11 +81,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Nimm also an, dass ein $i \in I$ eine obere Schranke von $I$ wäre.
-{{</ details >}}
-
-{{< details >}}
-- Jetzt musst du ein Element $m \in I$ finden, das größer ist als $i$.
+- Nimm also an, dass ein $i \in I$ eine obere Schranke von $I$ wäre. Jetzt musst du ein Element $m \in I$ finden, das größer ist als $i$.
 {{</ details >}}
 
 {{< details >}}
