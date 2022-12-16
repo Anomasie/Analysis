@@ -15,7 +15,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Es gilt $x \cdot y \geq 0$ genau dann, wenn $x \geq 0$ und $y \geq 0$ gilt oder $x \leq 0$ und $y \leq 0$. Das ist nicht trivial. Wenn du es verwenden möchtest, musst du den entsprechenden Satz der Vorlesung anwenden oder es selbst beweisen.
+- Es gilt $x \cdot y \geq 0$ genau dann, wenn $x \geq 0$ und $y \geq 0$ gilt oder $x \leq 0$ und $y \leq 0$. Das ist nicht trivial. Wenn du es verwenden möchtest, musst du den entsprechenden Satz der Vorlesung anwenden oder es selbst beweisen. (Der Beweis ist nicht schwer und eine gute Übung. $x \geq 0, y \geq 0 \Rightarrow xy \geq 0$ folgt aus O3, die anderen Möglichkeiten aus $x<0 \Leftrightarrow -x>0$ für x aus K.)
 {{</ details >}}
 
 ## Aufgabe 2
