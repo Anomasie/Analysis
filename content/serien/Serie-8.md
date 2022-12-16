@@ -15,7 +15,7 @@ Das gilt für alle Aufgaben.
 {{</ details >}}
 
 {{< details >}}
-- Du darfst verwenden, dass $x \cdot y \geq 0$ genau dann gilt, wenn $x \geq 0$ und $y \geq 0$ gilt oder $x \leq 0$ und $y \leq 0$.
+- Es gilt $x \cdot y \geq 0$ genau dann, wenn $x \geq 0$ und $y \geq 0$ gilt oder $x \leq 0$ und $y \leq 0$. Das ist nicht trivial. Wenn du es verwenden möchtest, musst du den entsprechenden Satz der Vorlesung anwenden oder es selbst beweisen.
 {{</ details >}}
 
 ## Aufgabe 2
@@ -73,7 +73,7 @@ Das gilt für alle Aufgaben.
 ### (b)
 
 {{< details >}}
-- Diese Aufgabe lässt sich am Besten mit einem Widerspruchsbeweis lösen.
+- Diese Aufgabe lässt sich gut mit einem Widerspruchsbeweis lösen.
 {{</ details >}}
 
 {{< details >}}
