@@ -1,0 +1,74 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="/Analysis/css/index.min.01504d757b7e794c97706947744b091e596ac058f948a8067aa433deb5ad3d9c.css" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css integrity=sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js integrity=sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script><title>Präsenzblatt 9</title></head><body class="flex justify-center font-serif min-h-screen bg-white dark:bg-black text-black dark:text-slate-50"><div class="px-6 py-12 flex flex-row min-h-full justify-center w-3xl grow max-w-3xl"><div class="flex flex-col min-h-full justify-between grow"><main class="flex flex-col"><div class="flex flex-col items-center"><h1 class="text-md italic">~ Präsenzblatt 9 ~</h1><div class="w-7/12 border-b border-slate-400 my-1"></div></div><article class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3"><h2 id=aufgabe-1>Aufgabe 1</h2><h3 id=a>(a)</h3><p>Es seien $A, B \subset K$ nach oben beschränkte Mengen, d.h. es gibt ein $a \in K$, das größer als alle Elemente von $A$ ist, und ein $b \in B$, das größer als alle Elemente von $B$ ist.</p><p>Für das Maximum von $a$ und $b$, $c := \max${$a,b$}, gelten $a \leq c$ und $b \leq c$. $c$ ist also größer als die obere Schranke $a$ von $A$ und größer als die obere Schranke $b$ von $B$. Wir müssen jetzt noch zeigen, dass $c$ größer als jedes Element von $A \cup B$ ist.</p><p>Für $x \in A \cup B$ gilt entweder $x \in A$ oder $x \in B$.</p><p>Falls $x \in A$ ist, gilt $x \leq a \leq c$.</p><p>Falls $x \in B$ ist, gilt $x \leq b \leq c$.</p><p>Insgesamt gilt also für alle $x \in A \cup B: x \leq c$, wir haben also eine obere Schranke von $A \cup B$ gefunden. Damit ist $A \cup B$ nach oben beschränkt.</p><h3 id=b>(b)</h3><p>$A$ sei nach oben durch $a$ beschränkt, d.h. für jedes $x \in A$ gilt $x \leq a$. Nun sei $y$ ein Element von $A \cap B$. Dann liegt $y$ sowohl in $A$ als auch in $B$. Insbesondere liegt $y$ in $A$. Damit gilt $y \leq a$.</p><p>Das bedeutet, $a$ ist auch eine obere Schranke von $A \cap B$.</p><h2 id=aufgabe-2>Aufgabe 2</h2><h3 id=teil-1-m-ist-genau-dann-nach-oben-beschränkt-wenn--m-nach-unten-beschränkt-ist>Teil 1: M ist genau dann nach oben beschränkt, wenn -M nach unten beschränkt ist</h3><p>$M$ ist genau dann nach oben beschränkt, wenn ein $s \in K$ existiert, s.d. für alle $m \in M$ gilt: $s \leq m$.
+Es gilt (laut Proposition (Rechenregeln) (c), für angeordnete Körper):
+$$
+m \leq s \Leftrightarrow -m \geq -s
+$$
+Das heißt, ein solches $s$ existiert genau dann, wenn für alle $-m$ in $-M$ auch $-m \geq -s$ gilt, und das ist genau dann der Fall, wenn $-M$ nach unten beschränkt ist.</p><h3 id=teil-2-sup-m---inf--m>Teil 2: $\sup M = -\inf -M$</h3><h4 id=teil-2a-sup-m-geq--inf--m>Teil 2a: $\sup M \geq -\inf -M$</h4><p>Mit Teil 1 haben wir gezeigt, dass für jede obere Schranke $s$ von $M$ $-s$ eine untere Schranke von $-M$ ist. Für die kleinste obere Schranke, $\sup M$, ist also $-\sup M$ eine untere Schranke von $-M$.
+(Nur noch nicht unbedingt die größte.)
+Das liefert uns
+$$
+-\sup M \leq \inf -M
+$$
+oder, etwas umgestellt:
+$$
+\sup M \geq -\inf -M.
+$$</p><h4 id=teil-2b-sup-m-leq--inf--m>Teil 2b: $\sup M \leq -\inf -M$</h4><p>Jetzt können wir feststellen, dass für jede untere Schranke $i$ von $-M$ die Zahl $-i$ eine obere Schranke von $M$ ist. Insbesondere gilt das für die größte untere Schranke, $\inf -M$. Wir erhalten
+$$
+-\inf -M \geq \sup M
+$$</p><p>Insgesamt erhalten wir also
+$$
+-\inf -M \geq \sup M \geq -\inf -M
+$$
+und damit die gewünschte Gleichheit.</p><h2 id=aufgabe-3>Aufgabe 3</h2><p>Unser Ziel wird es sein, $\sup B \leq \frac 1 {\inf A}$ und $\sup B \geq \frac{1}{\inf A}$ zu zeigen. Daraus folgt dann $\sup B = \frac 1 {\inf A}$.</p><h3 id=teil-1-sup-b-leq-frac-1-inf-a-dh-frac-1-inf-a-ist-eine-obere-schranke-von-b>Teil 1: $\sup B \leq \frac 1 {\inf A}$, d.h. $\frac 1 {\inf A}$ ist eine obere Schranke von $B$</h3><p>Wir wollen zeigen, dass alle Elemente von $B$ kleiner sind als $\frac 1 {\inf A}$. Dafür sei $b$ ein beliebiges Element aus $B$. Wegen der Definition von $B$ ist $b = \frac 1 a$ für ein $a \in A$.
+Wir wissen, dass $\inf A$ eine untere Schranke von $A$ ist. Damit gilt</p><p>$$
+\inf A \leq a
+\Rightarrow
+\frac 1 a \leq \frac 1 {\inf A}
+$$</p><p>und damit das gewünschte $b = \frac 1 a \leq \frac 1 {\inf A}$.</p><h3 id=teil-2-sup-b-geq-frac1inf-a>Teil 2: $\sup B \geq \frac{1}{\inf A}$</h3><p>Eine kurze Beobachtung:
+$$
+\sup B \geq \frac{1}{\inf A}
+\Leftrightarrow
+\inf A \geq \frac 1 {\sup B}.
+$$</p><p>Wir müssen also nur noch zeigen, dass $\frac 1 {\sup B}$ eine untere Schranke von A ist.
+Dann ist die größte untere Schranke von A, $\inf A$, auch größer als $\frac 1 {\sup B}$.</p><p>Es sei $a$ ein beliebiges Element von $A$. Dann ist $\frac 1 a$ ein Element von $B$ und erfüllt
+$$
+b \leq \sup B,
+$$
+also haben wir
+$$
+\frac 1 a = b \leq \sup B,
+$$
+und wenn wir das umformen, erhalten wir
+$$
+\frac 1 {\sup B} \leq a
+$$
+Damit ist $\frac 1 {\sup B}$ eine untere Schranke von $A$ und wir erhalten die gewünschte Ungleichung.</p><h3 id=aufgabe-4>Aufgabe 4</h3><p>$|x + y| = |x| + |y|$ gilt genau dann, wenn $x \geq 0$ und $y \geq 0$ oder $x \leq 0$ und $y \leq 0$.</p><p>Fall 1: $x$ und $y$ sind beide größer als 0
+$$
+\Rightarrow |x| = x, |y| = y, x+y \geq 0
+$$
+$$
+\Rightarrow |x+y| = x+y = |x| + |y|
+$$</p><p>Fall 2: $x$ und $y$ sind beide kleiner als 0
+$$
+\Rightarrow |x| = -x, |y| = -y, x+y = -(-x-y) \leq 0
+$$
+$$
+\Rightarrow |x+y| = -x -y = |x| + |y|
+$$</p><p>Fall 3: $x &lt; 0, y \geq 0$</p><p>Fall 3a: $-x \leq y$
+$$
+\Rightarrow y - x > y + x \geq 0
+$$
+$$
+\Rightarrow |x+y| = x+y &lt; y-x = |y| + |x|
+$$</p><p>Fall 3b: $-x > y$
+$$
+\Rightarrow -x+y > -x-y \geq 0
+$$
+$$
+\Rightarrow |x+y| = -x-y &lt; -x+y = |x| + |y|
+$$</p><p>Fall 4: $x \geq 0, y &lt; 0$</p><p>Das funktioniert analog zu Fall 3, vertausche dafür die Rollen von $x$ und $y$.</p></article></main><aside class=mt-6><div class="flex flex-col items-center py-6"><div class="w-7/12 border-b border-slate-400 my-1"></div></div><ul class="grid grid-cols-2 sm:grid-cols-4 gap-4"><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-9-pr/>Präsenzblatt 9</a>
+<time class="text-sm text-slate-400">Sa., 07 Jan. 2023 15:31</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-8/>Serie 8</a>
+<time class="text-sm text-slate-400">Fr., 16 Dez. 2022 09:20</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-7/>Serie 7</a>
+<time class="text-sm text-slate-400">Mi., 07 Dez. 2022 23:45</time></li></ul></aside></div></div></body></html>
