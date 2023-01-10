@@ -1,0 +1,98 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="/Analysis/css/index.min.01504d757b7e794c97706947744b091e596ac058f948a8067aa433deb5ad3d9c.css" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css integrity=sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js integrity=sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script><title>Präsenzblatt 10</title></head><body class="flex justify-center font-serif min-h-screen bg-white dark:bg-black text-black dark:text-slate-50"><div class="px-6 py-12 flex flex-row min-h-full justify-center w-3xl grow max-w-3xl"><div class="flex flex-col min-h-full justify-between grow"><main class="flex flex-col"><div class="flex flex-col items-center"><h1 class="text-md italic">~ Präsenzblatt 10 ~</h1><div class="w-7/12 border-b border-slate-400 my-1"></div></div><article class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3"><h2 id=aufgabe-1>Aufgabe 1</h2><p>Die Aussage folgt fast direkt aus Aufgabe 2, Präsenzblatt 9.
+Dort haben wir gezeigt, dass $M$ nach oben beschränkt ist g.d.w. $-M$ nach unten beschränkt ist, und dass $M$ ein Supremum besitzt g.d.w. $-M$ ein Infimum besitzt.
+Wann immer ich diese Aufgabe verwende, schreibe ich &ldquo;*&rdquo;.</p><p>Es habe nun jede nach oben beschränkte Teilmenge von $K$ ein Supremum.
+$X$ sei eine nach unten beschränkte Menge.
+Wir wollen zeigen, dass $X$ ein Infimum besitzt.</p><p>Wir wissen: Wenn $X$ ist nach unten beschränkt, ist $-X$ nach oben beschränkt (*).
+Dann hat $-X$ laut Annahme ein Supremum.
+Mit * erhalten wir, dass $-(-X) = X$ ein Infimum besitzt, und sind fertig.</p><p>Jeder Schritt lässt sich auch &ldquo;rückwärts&rdquo; gehen.
+Weil es so schön ist, schreibe ich es trotzdem noch einmal auf.</p><p>Es habe jetzt jede nach unten beschränkte Teilmenge von $K$ ein Infimum.</p><p>$Y$ sei eine nach oben beschränkte Teilmenge.</p><p>Dann ist $-Y$ nach unten beschränkt (*).</p><p>Es hat also $-Y$ ein Infimum laut Annahme.</p><p>Damit hat $-(-Y) = Y$ ein Supremum (*).</p><p>Da $Y$ beliebig war, besitzt jede nach oben beschränkte Teilmenge von $K$ ein Supremum.</p><h2 id=aufgabe-3>Aufgabe 3</h2><p>Es sei $\Phi: K \to K&rsquo;$ ein Körperisomorphismus, $\Phi$ ist also bijektiv.
+Damit existiert $\Phi^{-1}: K&rsquo; \to K$.
+Das ist wichtig, sonst könnten wir nicht zeigen, dass $\Phi^{-1}$ ein Körperisomorphismus ist.</p><p>Wir müssen die drei Eigenschaften nachweisen.
+Dabei werden wir fast jedes mal zwei bestimmte Tricks anwenden.</p><p>Trick 1 ist, $\Phi (\Phi^{-1}(x)) = x$ zu benutzen.
+Das gilt für alle $x$ aus $K&rsquo;$ laut Definition der Umkehrabbildung.</p><p>Trick 2 besteht aus dem Wissen, dass für bijektive $\Phi$ gilt: $\Phi(x) = y \land \Phi(z) = y \Rightarrow z = x$.
+Das folgt aus der Injektivität von bijektiven Funktionen.</p><h3 id=k1>(K1)</h3><h4 id=teil-1-phi-10--0>Teil 1: $\Phi^{-1}(0&rsquo;) = 0$</h4><p>Es folgt direkt aus der Definition:
+$$
+\Phi(\Phi^{-1}(0&rsquo;)) = 0'
+$$
+Da wir $\Phi(0) = 0&rsquo;$ gegeben haben und $\Phi$ bijektiv ist, muss $\Phi^{-1}(0&rsquo;) = 0$ gelten.</p><h4 id=teil-2-phi-1xy--phi-1x--phi-1y>Teil 2: $\Phi^{-1}(x+&lsquo;y) = \Phi^{-1}(x) + \Phi^{-1}(y)$</h4><p>$$
+\Phi(\Phi^{-1}(x+&lsquo;y)) = x+&lsquo;y \land
+\Phi(x+y) = x+&lsquo;y
+\Rightarrow
+\Phi^{-1}(x+&lsquo;y) = x+y
+$$</p><h3 id=k2>(K2)</h3><h4 id=teil-1-phi-11--1>Teil 1: $\Phi^{-1}(1&rsquo;) = 1$</h4><p>$$
+\Phi(\Phi^{-1}(1&rsquo;)) = 1&rsquo; \land
+\Phi(1) = 1&rsquo;
+\Rightarrow
+\Phi^{-1}(1&rsquo;) = 1
+$$</p><h4 id=teil-2-phi-1x-cdot-y--xcdot-y>Teil 2: $\Phi^{-1}(x \cdot&rsquo; y) = x\cdot y$</h4><p>$$
+\Phi(\Phi^{-1}(x \cdot&rsquo; y)) = x \cdot&rsquo; y \land
+\Phi(x \cdot y) = x \cdot&rsquo; y
+\Rightarrow
+\Phi^{-1}(x \cdot&rsquo; y) = x \cdot y
+$$</p><h3 id=k3-x--y-rightarrow-phi-1x--phi-1y>(K3): $x &lt; y \Rightarrow \Phi^{-1}(x) &lt;&rsquo; \Phi^{-1}(y)$</h3><p>Es seien $x,y$ in $K$ mit $x &lt; y$ gegeben.
+Angenommen, $\Phi^{-1}(x) \geq \Phi^{-1}(y)$.</p><p>$\Phi^{-1}$ ist bijektiv, weil $\Phi$ bijektiv ist.
+Wegen $x &lt; y \Rightarrow x \neq y$ folgt daher $\Phi^{-1}(x) \neq \Phi^{-1}(y)$.
+Es muss also $\Phi^{-1}(x) > \Phi^{-1}(y)$ gelten.</p><p>Dann folgt aus Eigenschaft K3 für $\Phi$:
+$$
+\Phi(\Phi^{-1}(x)) = x > \Phi(\Phi^{-1}(y)) = y
+$$
+und das ist ein Widerspruch zu $x &lt; y$.
+Unsere Annahme kann also nicht wahr sein, und es muss stattdessen
+$$
+\Phi^{-1}(x) &lt; \Phi^{-1}(y)
+$$
+gelten.</p><p>Damit haben wir alle drei Eigenschaften nachgewiesen und $\Phi^{-1}$ ist ein Körperisomorphismus.</p><h2 id=aufgabe-4>Aufgabe 4</h2><h3 id=a-sup-ab--sup-a--sup-b>(a) $\sup (A+B) = \sup A + \sup B$</h3><p>Wir gehen wieder in zwei Schritten vor:</p><h4 id=teil-1-sup-a--sup-b-ist-eine-obere-schranke-für-ab>Teil 1: $\sup A + \sup B$ ist eine obere Schranke für $A+B$.</h4><p>Dazu sei $a+b \in A+B$, also $a \in A$ und $b \in B$.
+Es gilt
+$$
+a \leq \sup A,
+b \leq \sup B
+$$
+und daraus folgt
+$$
+a + b
+\leq
+\sup A + \sup B.
+$$</p><h4 id=teil-2-sup-a--sup-b-ist-die-kleinste-obere-schranke-von-ab>Teil 2: $\sup A + \sup B$ ist die kleinste obere Schranke von $A+B$.</h4><p>Angenommen, $\sup A + \sup B - \epsilon, \epsilon > 0$ sei eine obere Schranke von $A+B$.
+Wir wollen jetzt ein Element in $A+B$ finden, das größer ist als $\sup A + \sup B - \epsilon$.
+Das wird dann ein Widerspruch dazu sein, dass das eine obere Schranke ist.</p><p>Es ist $\sup A$ das Supremum von $A$ und damit die kleinste obere Schranke von $A$.
+Damit ist $\sup A - \frac \epsilon 2$ keine obere Schranke mehr von $A$.
+Es gibt also ein $a \in A$, das
+$$
+\sup A - \frac \epsilon 2 &lt; a
+$$
+erfüllt.</p><p>Analog gibt es ein $b \in B$, das
+$$
+\sup B - \frac \epsilon 2 &lt; b
+$$
+erfüllt.</p><p>Wir erhalten mit diesem $a$ und diesem $b$:
+$$
+a + b > \sup A - \frac \epsilon 2 + \sup B - \frac \epsilon 2 = \sup A + \sup B + \epsilon
+$$
+und da $a \in A$, $b \in B$ gelten, ist $a + b \in A+B$.
+Wir haben also ein Element aus $A+B$ gefunden, das größer ist als die obere Schranke.
+Das ist ein Widerspruch.
+Damit kann $\sup A + \sup B - \epsilon$ keine obere Schranke von $A+B$ sein, und $\sup A + \sup B$ ist tatsächlich die kleinste obere Schranke von $A+B$.</p><h3 id=b-sup-c--sup--fx--gx--x-in-x---leq-sup-fx--sup-gx>(b) $\sup C = \sup ${$ f(x) + g(x) | x \in X $} $ \leq \sup f(X) + \sup g(X)$</h3><p>Zur Erinnerung: $f(X) = $ {$f(x)|x\in X$}.</p><p>Es gilt für jedes $x \in X$ (und damit für jedes $f(x) + g(x)$ aus $C$):
+$$
+f(x) + g(x) \leq \sup f(X) + \sup g(X),
+$$
+damit ist $\sup f(X) + \sup g(X)$ eine obere Schranke von $C$.
+Insbesondere ist die kleinste obere Schranke, $\sup C$, kleiner als diese obere Schranke.</p><h3 id=c-x--12-sup-c--sup-fx--sup-gx>(c) $X = ${$1,2$}, $\sup C &lt; \sup f(X) + \sup g(X)$</h3><p>Betrachte $f$ mit $f(1) = 0, f(2) = 1$ und $g$ mit $g(1) = 1, g(2) = 0$.</p><p>Dann ist
+$$
+f(1) + g(1) = 0+1 = 1,
+f(2) + g(2) = 1+0 = 1
+$$
+Also $C = ${$1$} und $\sup C = 1$.</p><p>Dahingegen sind
+$f(X) = $ {$f(1),f(2)$} $ = $ {$0,1$}
+und analog
+$g(X) = $ {$0,1$}.
+Damit ist
+$\sup f(X) = \sup ${$0,1$} $=1 = \sup g(X)$
+und somit</p><p>$$
+\sup C = 1 &lt; 1 + 1 = \sup f(X) + \sup g(X).
+$$</p></article></main><aside class=mt-6><div class="flex flex-col items-center py-6"><div class="w-7/12 border-b border-slate-400 my-1"></div></div><ul class="grid grid-cols-2 sm:grid-cols-4 gap-4"><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-10/>Präsenzblatt 10</a>
+<time class="text-sm text-slate-400">Di., 10 Jan. 2023 20:00</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-9-pr/>Präsenzblatt 9</a>
+<time class="text-sm text-slate-400">Di., 10 Jan. 2023 20:00</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-8/>Serie 8</a>
+<time class="text-sm text-slate-400">Fr., 16 Dez. 2022 09:20</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-7/>Serie 7</a>
+<time class="text-sm text-slate-400">Mi., 07 Dez. 2022 23:45</time></li></ul></aside></div></div></body></html>
