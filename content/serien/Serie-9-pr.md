@@ -10,7 +10,7 @@ draft: false
 
 Es seien $A, B \subset K$ nach oben beschränkte Mengen, d.h. es gibt ein $a \in K$, das größer als alle Elemente von $A$ ist, und ein $b \in B$, das größer als alle Elemente von $B$ ist.
 
-Für das Maximum von $a$ und $b$, $c := \max${$a,b$}, gelten $a \leq c$ und $b \leq c$. $c$ ist also größer als die obere Schranke $a$ von $A$ und größer als die obere Schranke $b$ von $B$. Wir müssen jetzt noch zeigen, dass $c$ größer als jedes Element von $A \cup B$ ist.
+Für das Maximum von $a$ und $b$, das ich $c := \max${$a,b$} nenne, gelten $a \leq c$ und $b \leq c$. $c$ ist also größer als die obere Schranke $a$ von $A$ und größer als die obere Schranke $b$ von $B$. Wir müssen jetzt noch zeigen, dass $c$ größer als jedes Element von $A \cup B$ ist.
 
 Für $x \in A \cup B$ gilt entweder $x \in A$ oder $x \in B$.
 
@@ -35,34 +35,62 @@ Es gilt (laut Proposition (Rechenregeln) (c), für angeordnete Körper):
 $$
 m \leq s \Leftrightarrow -m \geq -s
 $$
-Das heißt, ein solches $s$ existiert genau dann, wenn für alle $-m$ in $-M$ auch $-m \geq -s$ gilt, und das ist genau dann der Fall, wenn $-M$ nach unten beschränkt ist.
+Das heißt, ein solches $s$ existiert genau dann, wenn für alle $-m$ auch $-m \geq -s$ gilt, und das ist genau dann der Fall, wenn $-M$ nach unten beschränkt ist.
 
-### Teil 2: $\sup M = -\inf -M$
-#### Teil 2a: $\sup M \geq -\inf -M$
+### Teil 2: $\sup M$ existiert $\Leftrightarrow$ $\inf -M$ existiert und es ist $\sup M = -\inf(-M)$.
 
-Mit Teil 1 haben wir gezeigt, dass für jede obere Schranke $s$ von $M$ $-s$ eine untere Schranke von $-M$ ist. Für die kleinste obere Schranke, $\sup M$, ist also $-\sup M$ eine untere Schranke von $-M$.
-(Nur noch nicht unbedingt die größte.)
-Das liefert uns
-$$
--\sup M \leq \inf -M
-$$
-oder, etwas umgestellt:
-$$
-\sup M \geq -\inf -M.
-$$
+#### Teil 2a: $\sup M$ existiert $\Rightarrow \inf -M$ existiert
 
-#### Teil 2b: $\sup M \leq -\inf -M$
+Angenommen, $\sup M$ existiert.
+Mit Teil 1 haben wir gezeigt, dass für jede obere Schranke $s$ von $M$ auch $-s$ eine untere Schranke von $-M$ ist und umgekehrt.
+Für die kleinste obere Schranke, $\sup M$, ist also $-\sup M$ eine untere Schranke von $-M$.
 
-Jetzt können wir feststellen, dass für jede untere Schranke $i$ von $-M$ die Zahl $-i$ eine obere Schranke von $M$ ist. Insbesondere gilt das für die größte untere Schranke, $\inf -M$. Wir erhalten
-$$
--\inf -M \geq \sup M
-$$
+Jetzt müssen wir noch zeigen, dass es auch die größte untere Schranke ist.
 
-Insgesamt erhalten wir also
+Es sei $\epsilon > 0$. Wir wollen zeigen, dass $- \sup M + \epsilon$ keine untere Schranke mehr von $-M$ ist.
+Angenommen, $- \sup M + \epsilon$ wäre eine untere Schranke von $-M$. Dann würde
 $$
--\inf -M \geq \sup M \geq -\inf -M
+-\sup M + \epsilon \leq x
 $$
-und damit die gewünschte Gleichheit.
+für alle $x$ aus $-M$ gelten. Dann würde allerdings auch
+$$
+\sup M - \epsilon \geq -x
+$$
+für alle $x$ aus $-M$ gelten. Da $x \in -M \Leftrightarrow -x \in M$ ist, wäre dann $\sup M - \epsilon$ eine obere Schranke für $M$.
+Das ist ein Widerspruch, da $\sup M$ die kleinste obere Schranke von $M$ ist und $\sup M - \epsilon < \sup M$.
+
+Die Annahme, dass $-\sup M + \epsilon$ eine untere Schranke von $-M$ wäre, kann also nicht stimmen.
+Damit ist $-\sup M$ die größte untere Schranke von $-M$.
+
+$\inf(-M)$ existiert also und ist in diesem Fall genau $-\sup M$.
+
+#### Teil 2b: $\inf(-M)$ existiert $\Rightarrow \sup M$ existiert
+
+Im Prinzip können wir alle Schritte aus Teil 2a noch einmal machen.
+Nun habe $-M$ ein Infimum.
+Für jedes beliebige $x$ aus $M$ gilt:
+$$
+-x \in -M
+\Rightarrow
+-x \geq \inf -M
+\Rightarrow
+x \leq -\inf(-M)
+$$
+Damit ist $-\inf(-M)$ eine obere Schranke für $M$.
+
+Angenommen, $-\inf(-M) - \epsilon$ wäre eine obere Schranke von $M$; dann würde für alle $x$ aus $M$ gelten:
+$$
+x \leq -\inf(-M) - \epsilon
+\Rightarrow
+-x \geq \inf(-M) + \epsilon
+$$
+und damit wäre $\inf(-M) + \epsilon$ eine untere Schranke von $(-M)$.
+Das ist ein Widerspruch, weil $\inf(-M)$ die größte untere Schranke von $-M$ ist.
+Unsere Annahme kann also wieder nicht stimmen und $-\inf(-M) - \epsilon$ ist die kleinste obere Schranke von $M$, d.h.
+
+$$
+-\inf(-M) = \sup M
+$$
 
 ## Aufgabe 3
 
