@@ -29,6 +29,20 @@ Wenn ihr das benutzt, begründet, weshalb es gilt.
 - Es folgt aus Präsenzaufgabe 3 und K3.
 {{</ details >}}
 
+## Aufgabe 2
+
+{{< details >}}
+- Widerspruchsbeweis.
+{{</ details >}}
+
+{{< details >}}
+- Benutze die Ordnungsvollständigkeit.
+{{</ details >}}
+
+{{< details >}}
+- Der Trick aus Aufgabe 4a von Präsenzblatt 9 könnte nützlich sein, um den Widerspruch zu erhalten.
+{{</ details >}}
+
 ## Aufgabe 3
 
 ### (a)
