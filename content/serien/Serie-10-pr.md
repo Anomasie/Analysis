@@ -60,29 +60,44 @@ Da wir $\Phi(0) = 0'$ gegeben haben und $\Phi$ bijektiv ist, muss $\Phi^{-1}(0')
 #### Teil 2: $\Phi^{-1}(x+'y) = \Phi^{-1}(x) + \Phi^{-1}(y)$
 
 $$
-\Phi(\Phi^{-1}(x+'y)) = x+'y \land
-\Phi(x+y) = x+'y
+\Phi(\Phi^{-1}(x+'y)) = x+'y
+$$
+$$
+\land~
+\Phi(\Phi^{-1}(x)+\Phi^{-1}(y)) = \Phi(\Phi^{-1}(x))+'\Phi(\Phi^{-1}(y)) = x +' y
+$$
+$$
 \Rightarrow
-\Phi^{-1}(x+'y) = x+y
+\Phi^{-1}(x+'y) = \Phi^{-1}(x)+\Phi^{-1}(y)
 $$
 
 ### (K2)
 #### Teil 1: $\Phi^{-1}(1') = 1$
 
 $$
-\Phi(\Phi^{-1}(1')) = 1' \land
+\Phi(\Phi^{-1}(1')) = 1'
+$$
+$$
+\land~
 \Phi(1) = 1'
+$$
+$$
 \Rightarrow
 \Phi^{-1}(1') = 1
 $$
 
-#### Teil 2: $\Phi^{-1}(x \cdot' y) = x\cdot y$
+#### Teil 2: $\Phi^{-1}(x \cdot' y) = \Phi^{-1}(x) \cdot \Phi^{-1}(y)$
 
 $$
-\Phi(\Phi^{-1}(x \cdot' y)) = x \cdot' y \land
-\Phi(x \cdot y) = x \cdot' y
+\Phi(\Phi^{-1}(x \cdot' y)) = x \cdot' y
+$$
+$$
+\land~
+\Phi(\Phi^{-1}(x) \cdot \Phi^{-1}(y)) = \Phi(\Phi^{-1}(x)) \cdot' \Phi(\Phi^{-1}(y)) = x \cdot' y
+$$
+$$
 \Rightarrow
-\Phi^{-1}(x \cdot' y) = x \cdot y
+\Phi^{-1}(x \cdot' y) = \Phi^{-1}(x) \cdot \Phi^{-1}(y)
 $$
 
 ### (K3): $x < y \Rightarrow \Phi^{-1}(x) <' \Phi^{-1}(y)$
