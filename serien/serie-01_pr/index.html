@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="/Analysis/css/index.min.01504d757b7e794c97706947744b091e596ac058f948a8067aa433deb5ad3d9c.css" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css integrity=sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js integrity=sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script><title>Präsenzblatt 1</title></head><body class="flex justify-center font-serif min-h-screen bg-white dark:bg-black text-black dark:text-slate-50"><div class="px-6 py-12 flex flex-row min-h-full justify-center w-3xl grow max-w-3xl"><div class="flex flex-col min-h-full justify-between grow"><main class="flex flex-col"><div class="flex flex-col items-center"><h1 class="text-md italic">~ Präsenzblatt 1 ~</h1><div class="w-7/12 border-b border-slate-400 my-1"></div></div><article class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3"><h2 id=aufgabe-3>Aufgabe 3</h2><p>Zu zeigen ist, dass die Folge $(1 + \frac a n)^n$ monoton wächst. Das lässt sich durch Umformungen ermitteln. Nach ein paar Schritten können wir zu diesem Ergebnis kommen:
+$$
+x_{n+1} - x_n \geq 0
+\Leftrightarrow (\frac{1}{n+1})^{n+1} + \sum_{k=0}^\infty \binom n k (\frac a n)^k \cdot (\frac{n+1}{n+1-k} \cdot (\frac{n+1}{n})^k - 1) \geq 0
+$$
+Das ist der Fall, wenn $\frac{n+1}{n+1-k} \geq 1$ ist. Das lässt sich mit dem binomischen Satz umformen:
+$$
+\frac{n+1}{n+1-k} \geq 1
+\Leftrightarrow \sum_{i=0}^{k+1} \binom k i n^i \geq n^k (n+1-k).
+$$
+Letzteres wissen wir, weil die letzten zwei Summanden der linken Summe genau $n^{k+1}$ und $k n^k$ sind, also weil wir die Gültigkeit von
+$$
+\sum_{i=0}^{k+1} \binom k i n^i \geq n^{k+1} + k n^k = n^k (n + k) \geq n^k (n + 1 - k)
+$$
+kennen.</p><p>Der Weg ist nicht sonderlich schön. Mit Sicherheit gibt es elegantere Möglichkeiten, das zu zeigen.</p><h2 id=aufgabe-4>Aufgabe 4</h2><p>Die Folge $(1 + \frac a n)^n$ ist beschränkt, weil für jedes $n \in \N$ gilt: $x_n \leq \sum_{k=0}^n \frac {a^k}{k!}$.</p><p>Beweis der Hilfsaussage:
+$$
+x_n = \sum_{k=0}^n \frac{n!}{(n-k)!} \frac{a^k}{k!} \frac 1 {n^k} \leq \sum_{k=0}^n \frac{a^k}{k!}
+$$
+gilt, weil für alle $k$ gilt: $n! \leq n^k (n-k)!$ (das folgt aus der Definition von $n!$).</p><p>Jetzt wissen wir $x_n \leq \sum_{k=0}^n \frac {a^k}{k!}$. $a > 0$. In der Vorlesung wurde bewiesen, dass dann $\sum_{k=0}^\infty \frac {a^k}{k!} =: \exp(a) &lt; \infty$ gilt. Jeder Summand $\frac {a^k}{k!}$ ist positiv, also gilt
+$$
+x_n \leq \sum_{k=0}^n \frac {a^k}{k!} \leq \sum_{k=0}^\infty \frac {a^k}{k!},
+$$
+also ist $(x_n)_{n\in\N}$ beschränkt.</p></article></main><aside class=mt-6><div class="flex flex-col items-center py-6"><div class="w-7/12 border-b border-slate-400 my-1"></div></div><ul class="grid grid-cols-2 sm:grid-cols-4 gap-4"><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-02/>Serie 2</a>
+<time class="text-sm text-slate-400">Do., 27 Apr. 2023 13:13</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-01/>Serie 1</a>
+<time class="text-sm text-slate-400">Do., 20 Apr. 2023 12:56</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-01_pr/>Präsenzblatt 1</a>
+<time class="text-sm text-slate-400">Do., 27 Apr. 2023 13:29</time></li></ul></aside></div></div></body></html>
