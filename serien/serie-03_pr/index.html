@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="/Analysis/css/index.min.5f5f94ec577113aea598bc369ea47db1ac15cc352323de6e09c26c4200df9549.css" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css integrity=sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js integrity=sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script><title>Präsenzblatt 3</title></head><body class="flex justify-center font-serif min-h-screen bg-white dark:bg-black text-black dark:text-slate-50"><div class="px-6 py-12 flex flex-row min-h-full justify-center w-3xl grow max-w-3xl"><div class="flex flex-col min-h-full justify-between grow"><main class="flex flex-col"><div class="flex flex-col items-center"><h1 class="text-md italic">~ Präsenzblatt 3 ~</h1><div class="w-7/12 border-b border-slate-400 my-1"></div></div><article class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3"><h2 id=aufgabe-1>Aufgabe 1</h2><p>Es sei $(x_n)$ eine Folge mit $\limsup_{n\to\infty} = -\infty$.
+Das heißt, laut Definition des Limes Superior, dass
+$$
+-\infty = \limsup_{n\to\infty} x_n = \lim_{n\to\infty} \sup_{k > n} x_k.
+$$
+Die Definition des Grenzwertes liefert nun: Für jedes $C \in \R$ gibt es ein $N \in \N$, sodass für alle $n > N$ gilt, dass $\sup_{k > n} x_k &lt; C$.</p><p>Wir wollen nun zeigen, dass $\lim_{n\to\infty} x_n = -\infty$.
+Dazu sei nun $C \in \R$ beliebig. Es gibt, wie wir schon festgestellt haben, ein $N \in \N$, sodass für alle $n > N$ gilt, dass $\sup_{k > n} x_k &lt; C$.
+Jedes $x_k$ mit $k > n$ ist natürlich kleiner als das größte $x_k$ mit $k > n$ (oder genauso groß).
+Das heißt, für alle $n > N$ gilt
+$x_k \leq \sup_{k > n} x_k &lt; C$.
+Das ist genau das, was $\lim_{k \to \infty} x_k = -\infty$ bedeutet.</p><h2 id=aufgabe-2>Aufgabe 2</h2><p>Es sei $X$ eine abzählbare Menge und $A \subseteq X$. Zu zeigen ist, dass $A$ abzählbar ist.</p><p>Da $X$ abzählbar ist, gibt es eine bijektive Abbilung $j: N \to X$, wobei $N = \N$ oder $N = ${$1, &mldr;, n$} für ein $n \in \N$ gilt.
+(Dass $X$ abzählbar ist, heißt nicht unbedingt, dass es abzählbar <em>unendlich</em> ist.
+Der zweite Fall ist genau der Fall, dass $X$ endlich ist.)</p><p>Wir zeigen die Aussage, indem wir ein Lemma der Vorlesung verwenden.
+Das Lemma besagt:</p><blockquote><p>Sei $A$ eine Menge und $H: \N \to A$ surjektiv. Dann ist entweder $A$ endlich oder abzählbar unendlich.</p></blockquote><p>Wir müssen also dieses surjektive $H$ finden.</p><h4 id=fall-1-a--emptyset>Fall 1: $A = \emptyset$</h4><p>Dann ist $A$ endlich.</p><h4 id=fall-2-a-neq-emptyset>Fall 2: $A \neq \emptyset$</h4><p>Dann können wir ein $a \in A$ wählen.
+Wir definieren nun $H$ durch $H(n) := j(n)$, falls $j(n) \in A$ liegt, und $H(n) := a$, falls $j(n)$ nicht in $A$ liegt.
+Das $a$ ist quasi unser &ldquo;Ausweichwert&rdquo;, wenn wir ein $n$ nicht auf $j(n)$ abbilden können, weil wir damit $A$ verlassen würden; und wir wollen ja, dass $H$ nur auf $A$ abbildet, um das Lemma zu verwenden.</p><p>Das so konstruierte $H$ bildet von $\N$ auf $A$ ab.
+Es erreicht alle Elemente aus $A$, weil es alle Elemente aus $X$ erreicht bis auf die, die nicht in $A$ liegen.
+Damit ist $H$ surjektiv.
+Aus dem Lemma folgt, dass $A$ abzählbar endlich oder unendlich sein muss.</p><h2 id=aufgabe-3>Aufgabe 3</h2><p><strong>(a)</strong> haben wir in der Übung noch geschafft, <strong>(b)</strong> funktioniert genauso:</p><h3 id=b>(b)</h3><p>Zu zeigen ist $\overline{zw} = \bar z \bar w$.
+Dafür sei $z = a + ib$ und $w = c + id$ für $a, b, c$ und $d$ aus $\R$.
+Bemerken wir zuerst:
+$$
+z \cdot w = (a + ib)(c + id) = ac - bd + i(ad + bc).
+$$
+Der Realteil davon ist $ac - bd$ und der Imaginärteil $ad + bc$.
+Das komplex konjugierte von $z \dot w$ ist also
+$$
+\overline{z w} = ac - bd - i(ad + bc) = = ac - bd - iad - ibc.
+$$
+Schauen wir uns einmal die andere Seite an:
+$$
+\bar z \bar w = (a - ib) (c - id) = ac - bd - ibc - iad = \overline{z w}
+$$
+laut der obigen Rechnung.</p><h3 id=c>(c)</h3><p>Zu finden sind alle vierten Wurzeln aus 1, das heißt, alle $z \in \mathbb C$ mit $z^4 = 1$.
+Offenbar muss dieses $z$ auch
+$$
+(z^2)^2 = 1
+$$
+erfüllen.
+Es gibt zwei Zahlen, deren Quadrat 1 ergibt: $1$ und $-1$.
+Das heißt, $z^2 = 1$ oder $z^2 = -1$.</p><h4 id=fall-1-z2--1>Fall 1: $z^2 = 1$.</h4><p>Es gibt zwei Zahlen, deren Quadrat 1 ergibt: $1$ und $-1$, genau wie oben.
+$z$ kann also $1$ oder $-1$ sein.</p><h4 id=fall-2-z2---1>Fall 2: $z^2 = -1$.</h4><p>Der erste Kanditat für $z$ ist natürlich $i$, denn genau dafür haben wir ja die komplexen Zahlen eingeführt.
+Tatsächlich ist auch $(-i)^2 = -1$, da $(-i)^2 = (-1)^2 i^2 = 1 \cdot i^2 = -1$.
+Es ist also $z = \pm i$.</p><p>Insgesamt haben wir vier Ergebnisse erhalten: $z$ kann $1, -1, i$ oder $-i$ sein.</p><h3 id=d>(d)</h3><p>Gesucht sind die komplexen Zahlen $z$ mit $z^4 = -1$.
+Wie oben muss dieses $z$ auch
+$$
+(z^2)^2 = -1
+$$
+erfüllen. $z^2$ muss also $i$ oder $-i$ sein (gleiche Begründung wie oben).</p><h4 id=fall-1-z2--i>Fall 1: $z^2 = i$.</h4><p>Hier müssen wir ein bisschen rechnen: Dafür sei $z = a + ib$.
+$$
+z^2 = (a + ib)^2 = a^2 - b^2 + 2iab = (a^2 - b^2, 2ab)
+$$
+in der Koordinatendarstellung.
+Damit das genau i ergibt, muss $a^2 - b^2 = 0$ sein und $2ab = 1$.
+Weil $a$ und $b$ reelle Zahlen sind, können wir wie in $\R$ rechnen:
+$$
+a^2 - b^2 = 0 \Leftrightarrow a^2 = b^2 \Leftrightarrow \pm a = b.
+$$
+Setzen wir das jetzt in die zweite Gleichung ein, erhalten wir:
+$$
+2ab = \pm 2a^2 = 1 \Leftrightarrow a^2 = \pm \frac 1 2.
+$$
+Das hat in $\R$ die Lösungen $a = \pm \sqrt{\frac 1 2}$.</p><p>Also erhalten wir vier Möglichkeiten für z: $\sqrt{\frac 1 2} + i\sqrt{\frac 1 2}, \sqrt{\frac 1 2} - i \sqrt{\frac 1 2}, -\sqrt{\frac 1 2} + i\sqrt{\frac 1 2}, -\sqrt{\frac 1 2} - i\sqrt{\frac 1 2}$ (alle Kombinationen aus $(\pm \sqrt{\frac 1 2}, \pm \sqrt{\frac 1 2}$).</p></article></main><aside class=mt-6><div class="flex flex-col items-center py-6"><div class="w-7/12 border-b border-slate-400 my-1"></div></div><ul class="grid grid-cols-2 sm:grid-cols-4 gap-4"><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-03/>Serie 3</a>
+<time class="text-sm text-slate-400">Fr., 05 Mai 2023 19:05</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-02/>Serie 2</a>
+<time class="text-sm text-slate-400">Do., 27 Apr. 2023 13:13</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-01/>Serie 1</a>
+<time class="text-sm text-slate-400">Do., 20 Apr. 2023 12:56</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-03_pr/>Präsenzblatt 3</a>
+<time class="text-sm text-slate-400">Fr., 05 Mai 2023 19:54</time></li><li class="flex flex-col w-fit justify-self-center"><a class="hover:underline text-lg" href=https://anomasie.github.io/Analysis/serien/serie-01_pr/>Präsenzblatt 1</a>
+<time class="text-sm text-slate-400">Do., 27 Apr. 2023 13:29</time></li></ul></aside></div></div></body></html>
