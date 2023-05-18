@@ -8,11 +8,7 @@ draft: false
 
 ## Aufgabe 1
 
-- Für $l \in \{1,2,3\}$ kennt ihr das Ergebnis schon aus der Präsenzübung.
-
-{{< details >}}
-- Verdichtungskriterium
-{{</ details >}}
+**Die vorigen Hinweise waren wieder falsch.**
 
 ## Aufgabe 2
 
