@@ -8,7 +8,11 @@ draft: false
 
 ## Aufgabe 1
 
-**Die vorigen Hinweise waren wieder falsch.**
+**Die vorigen Hinweise waren wieder mit Fehlern:**
+
+- das Verdichtungskriterium lässt sich natürlich nicht anwenden, weil die Folgen nicht monoton fallen (sondern alternieren).
+
+- Für $l = 2$ und $l = 3$ kennt ihr die Antworten allerdings trotzdem schon aus der Präsenzübung: Der "negative" Teil der Reihe ist endlich (vgl. Übung), der "positive" ist unendlich. Damit ist die Summe von beidem immer noch unendlich.
 
 ## Aufgabe 2
 
