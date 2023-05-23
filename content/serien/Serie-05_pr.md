@@ -50,10 +50,10 @@ Fragen könnt ihr mir gern per Mail oder nächste Woche stellen.
 
 - Wichtig ist die Frage, ob $f_3(x)$ für $x \to 0$ gegen $f_3(0) = \frac 1 2$ konvergiert.
 
-#### Lösung:
+#### Lösung (korrigiert):
 
 {{< details >}}
-- Nein. Die Werte konvergieren gegen $1$ für $x \to 0$.
+- Ja, das tut sie.
 {{</ details >}}
 
 ### (d)
