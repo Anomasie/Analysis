@@ -25,6 +25,30 @@ draft: false
 
 ## Aufgabe 2
 
+{{< details >}}
+- Eine Möglichkeit ist, einen Widerspruchsbeweis zu führen. Angemommen, es gibt ein $p \in (0,1)$ mit $|f(p)| = C + \epsilon$ für ein $\epsilon > 0$.
+{{</ details >}}
+
+{{< details >}}
+- Ihr könnt o.E. annehmen, dass $f(p) > 0$.
+{{</ details >}}
+
+{{< details >}}
+- Betrachtet $(0,p)$. Laut Mittelwertsatz gibt es ein $x$, s.d. $f'(x) = \frac {...}{...}$. Analog gibt es ein $y \in (p,1)$ mit $f'(y) = \frac{...}{...}$.
+{{</ details >}}
+
+{{< details >}}
+- Jetzt könnt ihr $(x,y)$ betrachten. Laut Mittelwertsatz gibt es ein $z \in (x,y)$, s.d. $f''(z) = \frac{\frac{C+\epsilon}{1-p} + \frac{C+\epsilon}{p}}{y-x}$. 
+{{</ details >}}
+
+{{< details >}}
+- Dann erhaltet ihr $f''(z) \leq -C-\epsilon$, das ist ein Widerspruch (wozu?).
+{{</ details >}}
+
+{{< details >}}
+- $p, 1-p$ und $y-x$ kleines als $1$. (Warum?)
+{{</ details >}}
+
 ## Aufgabe 3
 
 {{< details >}}
