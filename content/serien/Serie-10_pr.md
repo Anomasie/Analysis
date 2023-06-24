@@ -12,9 +12,11 @@ Zu zeigen ist $\lim_{x\to0+} \ln(x) = -\infty$.
 
 Es sei $\epsilon > 0$ beliebig.
 O.E. $\epsilon < \frac 1 2$.
-Dann gibt es ein $n \in \N$, s.d. $\epsilon < \frac 1 {2^n})$.
-Für $\epsilon = \frac 1 3$ wäre das $n$ zum Beispiel $1$, da $\frac 1 3 < \frac 1 {2^1} = \frac 1 2$.
-Für $\epsilon \to 0$ haben wir $n \to \infty$.
+Dann gibt es ein $n_\epsilon \in \N$, s.d. $\epsilon < \frac 1 {2^{n_\epsilon}})$.
+Für $\epsilon = \frac 1 3$ wäre das $n_\epsilon$ zum Beispiel $1$, da $\frac 1 3 < \frac 1 {2^1} = \frac 1 2$.
+Für $\epsilon \to 0$ haben wir $n_\epsilon \to \infty$.
+
+(Die Existenz eines solchen $n_\epsilon$ folgt aus dem archimedischen Axiom. Weil die Exponential streng monoton wächst, $\frac 1 {2^{n_\epsilon}} = \left(\frac 1 2 \right)^{n_\epsilon} = \exp(\ln(\frac 1 2) \cdot n_\epsilon)$ und $\ln(\frac 1 2) < 0$ gilt, müssen die $n_\epsilon$ für kleinere $\epsilon$ größer werden.)
 
 Die Frage ist jetzt, was mit $\ln(x)$ passiert, wenn $x < \epsilon$.
 Wir wissen bereits, dass der Logarithmus streng monoton wächst, weil $\exp$ streng monoton wächst und $\ln$ die Umkehrfunktion von $\exp$ ist.
