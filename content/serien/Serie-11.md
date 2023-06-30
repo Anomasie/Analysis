@@ -53,5 +53,5 @@ draft: false
 {{</ details >}}
 
 {{< details >}}
-- Es gilt $\int_a^b \min_{\xi\in[a,b]} f(\xi) g(x) ~dx \leq \int_a^b f(x) g(x) ~d(x) \leq \int_a^b \max_{\xi\in[a,b]} f(\xi) g(x) ~dx$.
+- Es gilt $\int_a^b \min_{\xi\in[a,b]} f(\xi) g(x) ~dx \leq \int_a^b f(x) g(x) ~d(x) \leq \int_a^b \max_{\xi\in[a,b]} f(\xi) g(x) ~dx$. (Vergleiche Präsenzblatt 11, Aufgabe 4.)
 {{</ details >}}
