@@ -52,7 +52,7 @@ Dazu könnte "Proposition (Definition von Subtraktion)" hilfreich sein.
 - Ihr könnt Aufgabe 3(b) benutzen (auch wenn ihr 3(b) nicht gelöst haben solltet!).
 
 - {{< details >}}
-Ihr müsst also nur zeigen, dass es kein n in N mit J(n) = 0 gibt.
+Ihr müsst also nur zeigen, dass es kein $n \in N$ mit $J(n) = 0$ gibt.
 {{</ details >}}
 
 - {{< details >}}
