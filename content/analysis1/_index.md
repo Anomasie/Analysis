@@ -1,8 +1,6 @@
 ---
-title: "Hinweise"
+title: "Analysis 1"
 ---
-
-# Test
 
 Hier folgen Hinweise für die Hausaufgaben zur Vorlesung Analysis 1 im Wintersemester 2025.
 Um die Hinweise ansehen zu können, musst du sie anklicken.

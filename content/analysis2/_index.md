@@ -1,5 +1,5 @@
 ---
-title: "Hinweise Analysis 1"
+title: "Analysis 2"
 ---
 
 Hier folgen Hinweise für die Hausaufgaben zur Vorlesung Analysis 1 im Wintersemester 2025.
