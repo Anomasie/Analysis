@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hinweise Analysis 1 on Analysis</title><link>https://anomasie.github.io/Analysis/serien/</link><description>Recent content in Hinweise Analysis 1 on Analysis</description><generator>Hugo</generator><language>de-de</language><atom:link href="https://anomasie.github.io/Analysis/serien/index.xml" rel="self" type="application/rss+xml"/><item><title>Serie 1</title><link>https://anomasie.github.io/Analysis/serien/serie-01/</link><pubDate>Wed, 19 Apr 2023 22:27:42 +0100</pubDate><guid>https://anomasie.github.io/Analysis/serien/serie-01/</guid><description>&lt;h2 id="aufgabe-2"&gt;Aufgabe 2&lt;/h2&gt;
-&lt;h3 id="b"&gt;(b)&lt;/h3&gt;
-&lt;details class="details-container"&gt;
- &lt;summary&gt;
- &lt;ul&gt;
-&lt;li&gt;Versuche, $2^n$ durch etwas abzuschätzen, mit dem sich das $n$ kürzen lässt.&lt;/li&gt;
-&lt;/ul&gt;
-
- &lt;/summary&gt;
- &lt;div&gt;&lt;/div&gt;
-&lt;/details&gt;
-&lt;details class="details-container"&gt;
- &lt;summary&gt;
- &lt;ul&gt;
-&lt;li&gt;$2 = 1+1$&lt;/li&gt;
-&lt;/ul&gt;
-
- &lt;/summary&gt;
- &lt;div&gt;&lt;/div&gt;
-&lt;/details&gt;
-&lt;h2 id="aufgabe-3-und-4"&gt;Aufgabe 3 und 4&lt;/h2&gt;
-&lt;p&gt;Im Skript ist ein möglicher Lösungsweg grob umrissen.
-(Seite 95)
-Dort steht auch, was du noch nicht als bekannt voraussetzen darfst.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hinweise Analysis 1 on Analysis</title><link>https://anomasie.github.io/Analysis/serien/</link><description>Recent content in Hinweise Analysis 1 on Analysis</description><generator>Hugo</generator><language>de-de</language><atom:link href="https://anomasie.github.io/Analysis/serien/index.xml" rel="self" type="application/rss+xml"/><item><title>Serie 4</title><link>https://anomasie.github.io/Analysis/serien/serie-04/</link><pubDate>Sat, 19 Apr 2025 22:27:42 +0100</pubDate><guid>https://anomasie.github.io/Analysis/serien/serie-04/</guid><description>&lt;p&gt;Neue Hinweise!&lt;/p&gt;
+&lt;h2 id="aufgabe-1"&gt;Aufgabe 1&lt;/h2&gt;</description></item></channel></rss>
