@@ -1,0 +1,14 @@
+<header class="mb-4">
+    <div class="flex flex-row gap-1 items-center">
+        <div class="flex">
+            &lt;
+        </div>
+        <div class="flex">
+            {{ with .Parent }}
+            <a class="hover:underline text italic" href="{{ .RelPermalink }}">{{
+                .LinkTitle
+                }}</a>
+            {{ end }}
+        </div>
+    </div>
+</header>
