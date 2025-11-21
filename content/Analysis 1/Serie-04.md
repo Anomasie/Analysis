@@ -37,6 +37,13 @@ Widerspruchsbeweis
 
 ### Rück-Richtung
 
+- {{< details >}} Für unterschiedliche $n$, $m$ (wieso?) gibt es (wieso?) ein $k \in N$ mit $n = m + k$ oder $m = n + k$. {{</ details >}}
+
+- Wieso das? {{< details >}}
+Dabei könnte "Proposition (Definition von Subtraktion)" hilfreich sein.
+{{</ details >}}
+
+- Wozu? {{< details >}} Dann lässt sich $J(n) = J(m) = J(n+k)$ anwenden (oder umgekehrt). {{</ details >}}
 
 ## (c)
 
