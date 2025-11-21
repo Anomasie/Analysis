@@ -1,7 +1,6 @@
 baseURL = 'https://anomasie.github.io/hinweise'
 languageCode = 'de-de'
 defaultContentLanguage = 'de'
-title = 'Analysis'
+title = 'Hinweise'
 theme = 'anachi'
 enableGitInfo = true
-
