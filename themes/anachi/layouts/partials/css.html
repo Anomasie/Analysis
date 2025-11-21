@@ -1,5 +1,5 @@
 {{ $styles := resources.Get "css/index.css" }}
-{{ $styles = $styles | resources.PostCSS (dict "config" "./assets/css/postcss.config.js")}}
+{{ $styles = $styles | css.PostCSS (dict "config" "./assets/css/postcss.config.js")}}
 {{ if hugo.IsProduction }}
 	{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ else }}
