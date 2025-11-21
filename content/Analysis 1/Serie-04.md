@@ -32,15 +32,17 @@ draft: false
 ### Hin-Richtung
 
 {{< details >}}
-Widerspruchsbeweis
+indirekter Beweis
 {{</ details >}}
 
 ### Rück-Richtung
 
-- {{< details >}} Für unterschiedliche $n$, $m$ (wieso?) gibt es (wieso?) ein $k \in N$ mit $n = m + k$ oder $m = n + k$. {{</ details >}}
+- {{< details >}} indirekter Beweis
 
-- Wieso das? {{< details >}}
-Dabei könnte "Proposition (Definition von Subtraktion)" hilfreich sein.
+- {{< details >}} Für unterschiedliche $n$, $m$ gibt es (wieso?) ein $k \in N$ mit $n = m + k$ oder $m = n + k$. {{</ details >}}
+
+- Wieso? {{< details >}}
+Dazu könnte "Proposition (Definition von Subtraktion)" hilfreich sein.
 {{</ details >}}
 
 - Wozu? {{< details >}} Dann lässt sich $J(n) = J(m) = J(n+k)$ anwenden (oder umgekehrt). {{</ details >}}
