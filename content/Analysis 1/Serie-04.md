@@ -60,5 +60,7 @@ Das lässt sich zum Beispiel über Induktion nachweisen.
 # Aufgabe 4
 
 - {{< details >}} $|ab|$ entspricht entweder $ab$ oder $-ab$ (laut Definition). {{</ details >}}
+
 - {{< details >}} Wenn ihr die Ungleichung für beide Fälle zeigt, ist sie bewiesen. {{</ details >}}
-- {{< details >}} Vergesst bitte auch hier nicht, in jedem Schritt anzugeben, was ihr benutzt. {{</ details >}}
+
+- Vergesst bitte auch hier nicht, in jedem Schritt anzugeben, was ihr benutzt.
