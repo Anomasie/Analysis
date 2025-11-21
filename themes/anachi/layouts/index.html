@@ -1,3 +1,24 @@
 {{ define "main" }}
-{{ .Content }}
+<div class="flex flex-col min-h-full justify-between grow">
+    <main class="flex flex-col">
+        <div class="flex flex-col items-center">
+            <h1 class="text-md italic">~ {{ .Title }} ~</h1>
+            <div class="w-7/12 border-b border-slate-400 my-1"></div>
+        </div>
+        <article
+            class="prose prose-headings:mb-2 prose-headings:mt-3 prose-h4:text-base prose-h3:text-lg prose-h2:text-xl prose-h1:text-2xl max-w-full dark:prose-invert py-3">
+            {{ .Content }}
+        </article>
+        <section class="mt-6">
+            <ul class="flex flex-col gap-2">
+                {{ range .Pages.ByDate.Reverse }}
+                <li class="flex flex-col">
+                    <a class="hover:underline text-lg" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <time class="text-sm text-slate-400">{{ time.Format "Mon, 02 Jan 2006" .Lastmod }}</time>
+                </li>
+                {{ end }}
+            </ul>
+        </section>
+    </main>
+</div>
 {{ end }}
