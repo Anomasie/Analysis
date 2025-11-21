@@ -24,6 +24,7 @@ draft: false
 ## (a)
 
 - {{< details >}} vollständige Induktion {{</ details >}}
+
 - {{< details >}} über $n$ {{</ details >}}
 
 ## (b)
@@ -36,11 +37,6 @@ Widerspruchsbeweis
 
 ### Rück-Richtung
 
-- Für unterschiedliche $n$, $m$ (wieso?) gibt es (wieso?) ein $k \in N$ mit $n = m + k$ oder $m = n + k$.
-
-- {{< details >}}
-Dabei könnte "Proposition (Definition von Subtraktion)" hilfreich sein.
-{{</ details >}}
 
 ## (c)
 
