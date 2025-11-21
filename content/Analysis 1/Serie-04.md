@@ -37,7 +37,7 @@ indirekter Beweis
 
 ### Rück-Richtung
 
-- {{< details >}} indirekter Beweis
+- {{< details >}} indirekter Beweis {{</ details >}}
 
 - {{< details >}} Für unterschiedliche $n$, $m$ gibt es (wieso?) ein $k \in N$ mit $n = m + k$ oder $m = n + k$. {{</ details >}}
 
