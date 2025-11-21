@@ -2,7 +2,7 @@
 title: "Hinweise Analysis 1"
 ---
 
-Hier folgen Hinweise für die Hausaufgaben zur Vorlesung Analysis 2 im Sommersemester 2023.
+Hier folgen Hinweise für die Hausaufgaben zur Vorlesung Analysis 1 im Wintersemester 2025.
 Um die Hinweise ansehen zu können, musst du sie anklicken.
 
 {{< details >}}
